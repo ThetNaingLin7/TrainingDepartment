@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  
+  <servlet>
+  	<servlet-name>loginServlet</servlet-name>
+  	<servlet-class>controller.loginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>loginServlet</servlet-name>
+  	<url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>CourseListServlet</servlet-name>
+  	<servlet-class>controller.courseListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>CourseListServlet</servlet-name>
+  	<url-pattern>/courseList</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  	<servlet-name>DeleteServlet</servlet-name>
+  	<servlet-class>controller.deleteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>DeleteServlet</servlet-name>
+  	<url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>trainingServlet</servlet-name>
+  	<servlet-class>controller.TrainingSessionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>trainingServlet</servlet-name>
+  	<url-pattern>/training</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>registerSessionServlet</servlet-name>
+  	<servlet-class>controller.RegisterSessionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>registerSessionServlet</servlet-name>
+  	<url-pattern>/registerSession</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
